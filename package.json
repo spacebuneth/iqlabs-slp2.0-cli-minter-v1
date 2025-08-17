@@ -1,16 +1,20 @@
 {
   "name": "spl-2-minter",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/cli.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "bin": "./index.ts",
+  "bin": {
+    "spl-2-minter": "./cli.js"
+  },
   "dependencies": {
     "@solana/web3.js": "^1.98.4",
     "chalk": "^5.5.0",
@@ -26,6 +30,7 @@
     "@types/bs58": "^4.0.4",
     "@types/chalk-animation": "^1.6.3",
     "@types/figlet": "^1.7.0",
+    "ts-blank-space": "^0.6.2",
     "tsx": "^4.20.4"
   }
 }
